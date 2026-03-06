@@ -1,0 +1,29 @@
+TP : Interaction et Formulaires en JavaScript
+Objectif
+Apprendre à récupérer la valeur d'un champ de saisie (input) et à la transférer vers un autre élément suite à une action de l'utilisateur.
+Structure de départ (HTML)
+Copiez ce code dans votre éditeur :
+
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+    Champ 1 : <input type="text" id="a" value="MMH25"><br>
+    Champ 2 : <input type="text" id="b"><br><br>
+    <button id="btnCopier">Copier / Coller le texte</button>
+    <p>Résultat du transfert ci-dessus</p>
+    <script>
+        // La fonction sera définie ici
+    </script>
+</body>
+</html>
+
+Question 1 : Création de la fonction de transfert
+Énoncé : Créez une fonction nommée maFonction(). Cette fonction doit récupérer
+la valeur (value) du champ ayant l'ID a et l'affecter au champ ayant l'ID b.
+
+Question 2 : Liaison avec l'événement "Click"
+Énoncé : Modifiez la balise <button> dans le code HTML pour que la fonction
+maFonction() soit exécutée lorsque l'utilisateur clique sur le bouton.
+
+Question 3 : Analyse technique (Réflexion)
+Énoncé : Pourquoi utilise-t-on .value au lieu de .innerHTML pour les éléments <input> ?

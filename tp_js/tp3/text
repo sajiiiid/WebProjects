@@ -1,0 +1,30 @@
+TP : Extraction et Affichage de Données (DOM)
+Objectif
+Apprendre à extraire le contenu d'un élément spécifique parmi une liste (NodeList) et à l'injecter dans un autre conteneur en y ajoutant du texte personnalisé.
+Structure de départ (HTML)
+Copiez ce code de base :
+
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+    <h2>Rechercher des éléments HTML par leurs noms</h2>
+    <p>Bonjour tout le monde</p>
+    <p>Un exemple de l'utilisation de <b>getElementsByTagName</b>.</p>
+    <div id="demo"></div>
+    <script>
+        // Votre code JavaScript ici
+    </script>
+</body>
+</html>
+
+Question 1 : Sélection groupée par Balise
+Énoncé : Utilisez la méthode getElementsByTagName pour récupérer
+tous les paragraphes <p> du document dans une variable nommée x.
+
+Question 2 : Extraction et Concaténation
+Énoncé : Ciblez l'élément div ayant l'ID demo. Modifiez son contenu pour qu'il affiche la phrase :
+"Il s'agit du paragraphe " suivie du contenu HTML du deuxième paragraphe récupéré à la question précédente.
+
+Question 3 : Analyse du sélecteur
+Énoncé : Si vous aviez 10 paragraphes dans votre page, quel indice devriez-vous
+utiliser pour récupérer le tout dernier paragraphe ?

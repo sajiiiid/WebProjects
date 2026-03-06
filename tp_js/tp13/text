@@ -1,0 +1,32 @@
+TP : Validation de Saisie et Comparaison de Chaînes
+Objectif
+Apprendre à récupérer une valeur saisie par l'utilisateur dans un champ de texte (input type="text") et à la comparer à une valeur de référence pour afficher un message de validation.
+Structure de départ (HTML)
+Préparez un formulaire nommé form contenant un champ texte et un bouton de validation :
+
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+    <form name="form">
+        <label>Nom de l'école : </label>
+        <input type="text" name="web" size="30">
+        <button type="button" onclick="Corriger()">Vérifier</button>
+    </form>
+    <script>
+        // Le code JavaScript sera inséré ici
+    </script>
+</body>
+</html>
+
+Question 1 : Accès aux données du formulaire
+Énoncé : Comment JavaScript accède-t-il au texte tapé par l'utilisateur dans le champ nommé web ?
+
+Question 2 : Logique de Vérification (La fonction)
+Énoncé : Créez une fonction Corriger() qui vérifie si le texte saisi est exactement égal à "MMH".
+    • Si oui, affichez une alerte : "Réponse correcte !".
+    • Sinon, affichez une alerte : "Réponse incorrecte !".
+Question 3 : Analyse technique (La Casse)
+Énoncé : Que se passe-t-il si l'utilisateur écrit "mmh" (en minuscules) au lieu de "MMH" ?
+
+Question 4 : Type de bouton
+Énoncé : Pourquoi utilise-t-on type="button" au lieu de type="submit" dans ce cas précis ?

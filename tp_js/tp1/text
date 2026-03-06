@@ -1,0 +1,37 @@
+TP : Manipulation du DOM et Sélecteurs JavaScript
+
+Objectif : Maîtriser les différentes méthodes pour cibler des éléments HTML et modifier
+dynamiquement leur contenu.
+Structure de départ (HTML)
+Copiez ce code dans un fichier nommé index.html :
+
+HTML
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>TP JavaScript - Manipulation du DOM</title>
+</head>
+<body>
+<h2>Trouver un élément par classe, par balise et par ID</h2>
+<p class="intro">Paragraphe 1</p>
+<p class="intro">Paragraphe 2</p>
+<p id="info">NOM PRENOM</p>
+<script>
+// Les réponses aux questions s'écriront ici
+</script>
+</body>
+</html>
+
+Question 1 : Sélection par Nom de Balise
+Énoncé : Utilisez la méthode getElementsByTagName pour récupérer tous les éléments<p>.
+Modifiez le contenu du deuxième paragraphe pour y afficher en gras : MMH2526.
+
+Question 2 : Sélection par Identifiant (ID)
+Énoncé : Utilisez la méthode getElementById pour cibler l'élément unique
+ayant l'ID info. Remplacez son texte initial par : MMH25 (en gras).
+
+Question 3 : Sélection par Classe (Class)
+Énoncé : Utilisez la méthode getElementsByClassName pour cibler
+les éléments de la classe intro. Modifiez le contenu du premier paragraphe
+pour qu'il affiche : Bienvenue chez Abulcasis.

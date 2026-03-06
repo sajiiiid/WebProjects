@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP JavaScript - Manipulation du DOM</title>
+</head>
+<body>
+
+<h2>Trouver un élément par classe, par balise et par ID</h2>
+
+<p class="intro">Paragraphe 1</p>
+<p class="intro">Paragraphe 2</p>
+
+<p id="info">NOM PRENOM</p>
+
+<script>
+    // Question 1
+    let paragraphes = document.getElementsByTagName('p');
+    paragraphes[1].innerHTML = '<b>MMH2526</b>';
+
+    // Question 2
+    let infoElement = document.getElementById('info');
+    infoElement.innerHTML = '<b>MMH25</b>';
+
+    // Question 3
+    let introElements = document.getElementsByClassName('intro');
+    introElements[0].innerHTML = 'Bienvenue chez Abulcasis';
+</script>
+
+</body>
+</html>

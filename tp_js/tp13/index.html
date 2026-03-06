@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+
+<form name="form">
+    <label>Nom de l'ecole : </label>
+    <input type="text" name="web" size="30">
+    <button type="button" onclick="Corriger()">Verifier</button>
+</form>
+
+<script>
+    // Question 1: JavaScript accède au texte saisi via document.form.web.value
+    // Cette syntaxe utilise le nom du formulaire et le nom du champ
+
+    // Question 2: Fonction de vérification
+    function Corriger() {
+        // Récupérer la valeur saisie
+        var saisie = document.form.web.value;
+
+        // Vérifier si la saisie est exactement "MMH"
+        if (saisie === "MMH") {
+            alert("Réponse correcte !");
+        } else {
+            alert("Réponse incorrecte !");
+        }
+    }
+
+    // Question 3: Si l'utilisateur écrit "mmh" en minuscules, la comparaison
+    // sera fausse car JavaScript est sensible à la casse (case-sensitive).
+    // L'opérateur === compare les valeurs et "mmh" !== "MMH"
+
+    // Question 4: On utilise type="button" au lieu de type="submit" car:
+    // - type="submit" enverrait le formulaire et rechargerait la page
+    // - type="button" permet de contrôler l'action via JavaScript sans
+    //   soumettre le formulaire ni recharger la page
+</script>
+
+</body>
+</html>

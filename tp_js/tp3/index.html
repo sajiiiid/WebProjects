@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+
+<h2>Rechercher des éléments HTML par leurs noms</h2>
+<p>Bonjour tout le monde</p>
+<p>Un exemple de l'utilisation de <b>getElementsByTagName</b>.</p>
+<div id="demo"></div>
+
+<script>
+    // Question 1 : Sélection groupée par Balise
+    var x = document.getElementsByTagName("p");
+
+    // Question 2 : Extraction et Concaténation
+    document.getElementById("demo").innerHTML = "Il s'agit du paragraphe " + x[1].innerHTML;
+
+    // Question 3 : Analyse du sélecteur
+    // Pour 10 paragraphes, l'indice du dernier serait : x[9]
+    // Ou de manière générale : x[x.length - 1]
+</script>
+</body>
+</html>

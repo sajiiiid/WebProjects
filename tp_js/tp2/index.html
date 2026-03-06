@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+
+Champ 1 : <input type="text" id="a" value="MMH25"><br>
+Champ 2 : <input type="text" id="b"><br><br>
+<button id="btnCopier" onclick="maFonction()">Copier / Coller le texte</button>
+<p>Résultat du transfert ci-dessus</p>
+
+<script>
+    // Question 1: Création de la fonction de transfert
+    function maFonction() {
+        var valeurA = document.getElementById("a").value;
+        document.getElementById("b").value = valeurA;
+    }
+
+    // Question 3: Analyse technique
+    // On utilise .value au lieu de .innerHTML pour les éléments <input> car :
+    // - .value récupère/modifie le contenu du champ de saisie
+    // - .innerHTML est utilisé pour les éléments HTML qui contiennent du contenu entre balises
+    // - Les <input> sont des balises auto-fermantes sans contenu interne
+</script>
+</body>
+</html>

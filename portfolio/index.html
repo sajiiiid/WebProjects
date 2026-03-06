@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | CS Engineering Student</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font for a clean, professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Sajid<span>.dev</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container reveal">
+                <div class="hero-content">
+                    <h1>CS Engineering Student</h1>
+                    <p class="subtitle">EIA Génie Informatique | CPGE TSI Alumni</p>
+                    <p class="description">
+                        Focusing on <strong>Object-Oriented Programming</strong>, <strong>Design Patterns</strong>, and <strong>Mathematical Rigor</strong>. 
+                        Building robust software with a focus on clean architecture.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary">View Projects</a>
+                        <a href="#contact" class="btn secondary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="reveal">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I'm a Computer Science Engineering student at EIA with a strong foundation from CPGE Prepa TSI.
+                            My passion lies in creating well-structured, maintainable software through object-oriented programming
+                            and design patterns. I bring mathematical rigor and problem-solving skills from my preparatory classes
+                            to every project I undertake.
+                        </p>
+                        <p>
+                            Constantly learning and adapting to new technologies while maintaining a focus on core software engineering principles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="reveal">
+            <div class="container">
+                <h2>Technical Arsenal</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <div class="tags">
+                            <span>Java (OOP & Patterns)</span>
+                            <span>Python</span>
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Systems & Tools</h3>
+                        <div class="tags">
+                            <span>Linux (Arch & CLI)</span>
+                            <span>Git / GitHub</span>
+                            <span>JetBrains IDEs</span>
+                            <span>VS Code</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-brain"></i> Core Competences</h3>
+                        <div class="tags">
+                            <span>Problem Solving</span>
+                            <span>Mathematical Foundations</span>
+                            <span>Critical Thinking</span>
+                            <span>Teamwork</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div id="projects-container" class="projects-grid">
+                    <!-- Projects will be injected here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="reveal">
+            <div class="container">
+                <h2>Education Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="year">Current</div>
+                        <div class="content">
+                            <h3>EIA – Génie Informatique</h3>
+                            <p>Engineering Cycle in Computer Science.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2021 - 2023</div>
+                        <div class="content">
+                            <h3>CPGE Prépa TSI</h3>
+                            <p>Intensive preparatory classes for engineering schools, focusing on Technology and Industrial Sciences.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2021</div>
+                        <div class="content">
+                            <h3>Baccalaureate</h3>
+                            <p>Foundational degree in science/technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-container">
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="social-links">
+                        <a href="mailto:your.email@example.com" class="social-icon" aria-label="Send an Email" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub Profile" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sajid | Built for Professionalism & Performance</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
