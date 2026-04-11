@@ -1,0 +1,25 @@
+TP : Incrémentation Dynamique et Gestion des Tableaux
+Objectif
+Apprendre à utiliser la propriété .length d'un tableau pour créer de nouveaux éléments de manière logique et automatique, tout en mettant à jour l'interface utilisateur à chaque interaction.
+Structure de départ (HTML)
+Préparez votre environnement de travail avec un bouton et une zone de texte :
+
+<!DOCTYPE html><html lang="fr"><body>
+
+    <button id="btnAjouter">Cliquez ici</button>
+    <p id="MMH"></p>
+
+    <script>
+        // Le code JavaScript sera inséré ici
+    </script>
+</body></html>
+
+Question 1 : Initialisation du Tableau
+Énoncé : Créez un tableau nommé filieres contenant les valeurs "filiere1", "filiere2" et "filiere3". Affichez ce tableau dans le paragraphe d'ID MMH.
+Question 2 : Automatisation de l'Ajout (La fonction)
+Énoncé : Créez une fonction mafonction() qui ajoute un élément au tableau. Le nom de cet élément doit être composé du mot "filiere" suivi du nombre total d'éléments après l'ajout (ex: "filiere4", puis "filiere5", etc.).
+Question 3 : Liaison et Déclenchement
+Énoncé : Liez la fonction au bouton HTML pour que l'ajout se produise à chaque clic de l'utilisateur.
+
+Question 4 : Analyse technique
+Énoncé : Si le tableau contient déjà 10 éléments, quelle sera la valeur ajoutée au 11ème clic ? Comment le script le sait-il ?

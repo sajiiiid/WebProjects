@@ -1,0 +1,40 @@
+TP : Gestion des Formulaires et Boutons Radio
+Objectif
+Apprendre à récupérer la sélection d'un utilisateur dans un formulaire
+via des boutons radio et à utiliser des structures conditionnelles (if...else)
+ou des boucles pour traiter les données saisies.
+Structure de départ (HTML)
+Préparez un formulaire contenant un groupe de boutons radio partageant le même nom (name="choix") :
+
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+    <p>Entrez votre choix :</p>
+
+    <form name="form2">
+        <input type="radio" name="choix" value="1"> choix numéro 1<br>
+        <input type="radio" name="choix" value="2"> choix numéro 2<br>
+        <input type="radio" name="choix" value="3"> choix numéro 3<br>
+
+        <input type="button" value="Quel est votre choix ?" onclick="choixpropre(form2)">
+    </form>
+    <script>
+        // Le code JavaScript sera inséré ici
+    </script>
+</body>
+</html>
+
+Question 1 : Fonctionnement des Boutons Radio
+Énoncé : Pourquoi est-il important que tous les boutons <input type="radio">
+possèdent le même attribut name="choix" ?
+
+Question 2 : Vérification de la sélection (Méthode Conditionnelle)
+Énoncé : Créez une fonction choixpropre(form2) qui vérifie individuellement si chaque
+option est cochée (.checked) et affiche une alerte avec la valeur correspondante.
+
+Question 3 : Optimisation (La Boucle)
+Énoncé : La méthode précédente est longue si on a 100 choix. Proposez une version
+plus courte utilisant une boucle for pour parcourir le groupe de boutons.
+
+Question 4 : Analyse technique
+Énoncé : À quoi sert l'argument form2 passé dans choixpropre(form2) ?

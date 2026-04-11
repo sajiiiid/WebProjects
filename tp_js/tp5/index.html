@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+
+<button id="btnAjouter">Cliquez ici</button>
+<p id="MMH"></p>
+
+<script>
+    // Question 1 : Initialisation du Tableau
+    let filieres = ["filiere1", "filiere2", "filiere3"];
+    document.getElementById("MMH").textContent = filieres.join(", ");
+
+    // Question 2 : Automatisation de l'Ajout (La fonction)
+    function mafonction() {
+        filieres.push("filiere" + (filieres.length + 1));
+        document.getElementById("MMH").textContent = filieres.join(", ");
+    }
+
+    // Question 3 : Liaison et Déclenchement
+    document.getElementById("btnAjouter").addEventListener("click", mafonction);
+
+    // Question 4 : Analyse technique
+    // Réponse : Au 11ème clic, la valeur ajoutée sera "filiere11"
+    // Le script le sait grâce à la propriété .length qui retourne le nombre d'éléments
+    // dans le tableau. Après 10 clics, le tableau contient 13 éléments (3 initiaux + 10 ajoutés),
+    // donc filieres.length vaut 13, et on ajoute "filiere" + (13 + 1) = "filiere14"
+    // Correction : si le tableau contient DÉJÀ 10 éléments au total, au prochain clic
+    // on ajoutera "filiere" + (10 + 1) = "filiere11"
+</script>
+</body>
+</html>

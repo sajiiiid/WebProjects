@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+
+<button id="btnAjout">Ajouter des filières</button>
+<p id="EIA"></p>
+<p id="f"></p>
+
+<script>
+    // Question 1 : Initialisation et Affichage
+    let filieres = ["GISIBA1", "GPIP1", "GPIP2"];
+    document.getElementById("EIA").textContent = filieres.join(", ");
+
+    // Question 2 : Modification dynamique (La fonction)
+    function mafonction() {
+        filieres.push("MMH", "ISIT3");
+        document.getElementById("EIA").textContent = filieres.join(", ");
+    }
+
+    // Question 3 : Liaison Événementielle
+    document.getElementById("btnAjout").addEventListener("click", mafonction);
+
+    // Question 4 : Analyse technique
+    // Réponse : Si vous cliquez plusieurs fois sur le bouton, les valeurs "MMH" et "ISIT3"
+    // seront ajoutées à chaque clic, créant des doublons dans le tableau.
+    // Par exemple : après 2 clics → ["GISIBA1", "GPIP1", "GPIP2", "MMH", "ISIT3", "MMH", "ISIT3"]
+</script>
+
+</body>
+</html>

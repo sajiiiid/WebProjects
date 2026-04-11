@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+
+<button id="btnAction">Cliquez ici</button>
+<p id="MMH"></p>
+
+<script>
+    // Question 1 : Initialisation et Affichage
+    let fruit = ["C", "D", "A", "B", "Z", "T", "Y"];
+    document.getElementById("MMH").textContent = fruit.join(", ");
+
+    // Question 2 : Logique de Tri (La fonction)
+    function mafonction() {
+        fruit.sort();           // Tri par ordre alphabétique (A à Z)
+        fruit.reverse();        // Inversion pour obtenir l'ordre décroissant (Z à A)
+        document.getElementById("MMH").textContent = fruit.join(", ");
+    }
+
+    // Question 3 : Liaison Événementielle
+    document.getElementById("btnAction").addEventListener("click", mafonction);
+
+    // Question 4 : Analyse technique
+    // Réponse : Si vous cliquez une deuxième fois sur le bouton, le tableau est à nouveau
+    // trié (A à Z) puis inversé (Z à A). Puisque le tableau était déjà dans l'ordre Z à A,
+    // le tri le remet en ordre A à Z, puis l'inversion le remet en Z à A.
+    // Le résultat visuel reste donc identique : Z, Y, T, D, C, B, A
+</script>
+
+</body>
+</html>

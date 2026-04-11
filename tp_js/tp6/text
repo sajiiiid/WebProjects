@@ -1,0 +1,34 @@
+TP : Manipulation Avancée des Tableaux (Tri et Inversion)
+Objectif
+Apprendre à réorganiser les données d'un tableau JavaScript en utilisant les méthodes
+natives .sort() et .reverse(), et mettre à jour l'interface utilisateur.
+Structure de départ (HTML)
+Préparez votre environnement avec un bouton d'action et une zone d'affichage :
+
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+    <button id="btnAction">Cliquez ici</button>
+    <p id="MMH"></p>
+    <script>
+        // Le code JavaScript sera inséré ici
+    </script>
+</body>
+</html>
+
+Question 1 : Initialisation et Affichage
+Énoncé : Créez un tableau nommé fruit contenant les lettres suivantes :
+"C", "D", "A", "B", "Z", "T", "Y". Affichez ce tableau dans le paragraphe
+ayant l'ID MMH.
+
+Question 2 : Logique de Tri (La fonction)
+Énoncé : Créez une fonction mafonction() qui effectue les étapes suivantes :
+    1. Trie le tableau par ordre alphabétique.
+    2. Inverse l'ordre des éléments pour obtenir un tri décroissant (Z à A).
+    3. Met à jour l'affichage dans le paragraphe MMH.
+
+Question 3 : Liaison Événementielle
+Énoncé : Liez la fonction au bouton HTML pour déclencher la transformation au clic.
+
+Question 4 : Analyse technique
+Énoncé : Que se passe-t-il si vous cliquez une deuxième fois sur le bouton ?

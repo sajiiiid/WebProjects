@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+
+<p>Entrez votre choix :</p>
+<form name="form2">
+    <input type="radio" name="choix" value="1"> choix numéro 1<br>
+    <input type="radio" name="choix" value="2"> choix numéro 2<br>
+    <input type="radio" name="choix" value="3"> choix numéro 3<br>
+
+    <input type="button" value="Quel est votre choix ?" onclick="choixpropre(form2)">
+</form>
+
+<script>
+    // Question 1 : Fonctionnement des Boutons Radio
+    // Réponse : Il est important que tous les boutons radio aient le même attribut name="choix"
+    // car cela permet de les grouper ensemble. Dans un groupe de boutons radio, un seul
+    // bouton peut être sélectionné à la fois. Si les boutons avaient des noms différents,
+    // plusieurs pourraient être cochés simultanément, ce qui n'est pas le comportement attendu.
+
+    // Question 2 : Vérification de la sélection (Méthode Conditionnelle)
+    function choixpropre(form) {
+        if (form.choix[0].checked) {
+            alert("Vous avez choisi : " + form.choix[0].value);
+        } else if (form.choix[1].checked) {
+            alert("Vous avez choisi : " + form.choix[1].value);
+        } else if (form.choix[2].checked) {
+            alert("Vous avez choisi : " + form.choix[2].value);
+        } else {
+            alert("Aucun choix sélectionné");
+        }
+    }
+
+    // Question 3 : Optimisation (La Boucle)
+    // Version optimisée avec une boucle for
+    function choixpropre_optimise(form) {
+        for (let i = 0; i < form.choix.length; i++) {
+            if (form.choix[i].checked) {
+                alert("Vous avez choisi : " + form.choix[i].value);
+                return;  // Sortie de la fonction après avoir trouvé le choix
+            }
+        }
+        alert("Aucun choix sélectionné");
+    }
+
+    // Question 4 : Analyse technique
+    // Réponse : L'argument form2 passé dans choixpropre(form2) est une référence au
+    // formulaire HTML. Il permet à la fonction d'accéder directement aux éléments du
+    // formulaire (notamment le groupe de boutons radio "choix") sans avoir à utiliser
+    // document.forms["form2"] ou document.querySelector(). C'est un moyen pratique
+    // de passer le contexte du formulaire à la fonction.
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+TP : Manipulation des Tableaux et Mise à jour du DOM
+
+Objectif
+Apprendre à stocker des données dans un tableau JavaScript, à les modifier dynamiquement avec la méthode .push() et à rafraîchir l'affichage sur la page HTML.
+Structure de départ (HTML)
+Copiez ce code pour préparer votre environnement de travail :
+
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+    <button id="btnAjout">Ajouter des filières</button>
+    <p id="EIA"></p>
+    <p id="f"></p>
+    <script>
+        // Le code JavaScript sera écrit ici
+    </script>
+</body>
+</html>
+
+Question 1 : Initialisation et Affichage
+Énoncé : Créez un tableau nommé filieres contenant les trois éléments suivants : "GISIBA1", "GPIP1", "GPIP2". Affichez ensuite ce tableau dans le paragraphe ayant l'ID EIA.
+Question 2 : Modification dynamique (La fonction)
+Énoncé : Créez une fonction mafonction() qui :
+    1. Ajoute deux nouvelles entrées au tableau : "MMH" et "ISIT3".
+    2. Met à jour le contenu du paragraphe EIA pour afficher la nouvelle liste complète.
+Question 3 : Liaison Événementielle
+Énoncé : Liez la fonction mafonction() au bouton présent dans le code HTML pour que l'ajout se produise au clic.
+Question 4 : Analyse technique
+Énoncé : Que se passe-t-il si vous cliquez plusieurs fois sur le bouton ?
